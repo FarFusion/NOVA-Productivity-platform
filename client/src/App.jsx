@@ -4,6 +4,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
+import Hero from './components/Hero/Hero'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,6 +12,7 @@ function App() {
   return (
     <main>
       <Navbar/>
+      <Hero/>
       <h1>
         NOVA
       </h1>
