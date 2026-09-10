@@ -1,16 +1,148 @@
-# React + Vite
+# NOVA — AI Productivity Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, responsive SaaS landing page built for a Front-End Development Intern assignment.
 
-Currently, two official plugins are available:
+NOVA is a fictional AI-powered productivity platform designed to help teams manage projects, automate repetitive workflows, and collaborate from one central workspace.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📌 Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+NOVA is a modern SaaS landing page created using React.js and Vite.
 
-## Expanding the Oxlint configuration
+The goal of this project was to build a professional, responsive, and interactive landing page while following modern front-end development practices.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+The page includes multiple sections designed to communicate the product's value, features, pricing, customer stories, and call-to-action.
+
+---
+
+## ✨ Features
+
+### Core Sections
+
+- Responsive Navigation Bar
+- Hero Section
+- Trusted By / Company Logos
+- Features Section
+- Product / About Section
+- How It Works
+- Statistics Section
+- Solutions / Use Cases
+- Testimonials
+- Pricing Section
+- FAQ Accordion
+- Final Call-to-Action
+- Responsive Footer
+
+### Interactions
+
+- Responsive navigation
+- Mobile hamburger menu
+- Smooth scrolling navigation
+- FAQ accordion
+- Monthly / Annual pricing toggle
+- Button hover effects
+- Card hover animations
+- Responsive layouts for desktop, tablet, and mobile
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- React.js
+- Vite
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+
+### Development Tools
+
+- Visual Studio Code
+- Git
+- GitHub
+- Vercel
+
+### Additional
+
+- CSS Variables
+- CSS Grid
+- CSS Flexbox
+- React `useState`
+- Responsive Media Queries
+
+---
+
+## 📂 Project Structure
+
+```text
+NOVA/
+│
+├── public/
+│
+├── src/
+│   │
+│   ├── components/
+│   │   │
+│   │   ├── Navbar/
+│   │   │   ├── Navbar.jsx
+│   │   │   └── Navbar.css
+│   │   │
+│   │   ├── Hero/
+│   │   │   ├── Hero.jsx
+│   │   │   └── Hero.css
+│   │   │
+│   │   ├── TrustedBy/
+│   │   │   ├── TrustedBy.jsx
+│   │   │   └── TrustedBy.css
+│   │   │
+│   │   ├── Features/
+│   │   │   ├── Features.jsx
+│   │   │   └── Features.css
+│   │   │
+│   │   ├── Product/
+│   │   │   ├── Product.jsx
+│   │   │   └── Product.css
+│   │   │
+│   │   ├── HowItWorks/
+│   │   │   ├── HowItWorks.jsx
+│   │   │   └── HowItWorks.css
+│   │   │
+│   │   ├── Stats/
+│   │   │   ├── Stats.jsx
+│   │   │   └── Stats.css
+│   │   │
+│   │   ├── Solutions/
+│   │   │   ├── Solutions.jsx
+│   │   │   └── Solutions.css
+│   │   │
+│   │   ├── Testimonials/
+│   │   │   ├── Testimonials.jsx
+│   │   │   └── Testimonials.css
+│   │   │
+│   │   ├── Pricing/
+│   │   │   ├── Pricing.jsx
+│   │   │   └── Pricing.css
+│   │   │
+│   │   ├── FAQ/
+│   │   │   ├── FAQ.jsx
+│   │   │   └── FAQ.css
+│   │   │
+│   │   ├── CTA/
+│   │   │   ├── CTA.jsx
+│   │   │   └── CTA.css
+│   │   │
+│   │   └── Footer/
+│   │       ├── Footer.jsx
+│   │       └── Footer.css
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── README.md
+└── vite.config.js
