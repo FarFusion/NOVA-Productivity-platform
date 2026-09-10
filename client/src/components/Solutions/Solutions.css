@@ -1,0 +1,555 @@
+/* =========================
+   SOLUTIONS
+========================= */
+
+.solutions {
+  padding: 110px 0;
+  background: var(--color-bg);
+}
+
+/* =========================
+   SECTION HEADER
+========================= */
+
+.section-header {
+  max-width: 680px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.section-label {
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  color: var(--color-primary);
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.section-header h2 {
+  margin-bottom: 18px;
+
+  color: var(--color-text);
+
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+
+  letter-spacing: -0.04em;
+}
+
+.section-header p {
+  max-width: 600px;
+  margin: 0 auto;
+
+  color: var(--color-text-secondary);
+
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* =========================
+   FEATURED SOLUTION
+========================= */
+
+.solutions__featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 60px;
+
+  padding: 60px;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+
+  background: var(--color-bg-secondary);
+
+  overflow: hidden;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.solutions__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.solutions__tag {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  color: var(--color-primary);
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.solutions__content h3 {
+  max-width: 500px;
+
+  margin-bottom: 20px;
+
+  color: var(--color-text);
+
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+
+  letter-spacing: -0.04em;
+}
+
+.solutions__content > p {
+  max-width: 500px;
+
+  margin-bottom: 28px;
+
+  color: var(--color-text-secondary);
+
+  line-height: 1.7;
+}
+
+/* =========================
+   CHECK LIST
+========================= */
+
+.solutions__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 14px;
+
+  margin: 0 0 30px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.solutions__list li {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 0.9rem;
+}
+
+.solutions__list li span {
+  color: var(--color-primary);
+
+  font-weight: 700;
+}
+
+/* =========================
+   LINK
+========================= */
+
+.solutions__link {
+  width: fit-content;
+
+  color: var(--color-text);
+
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: var(--transition-fast);
+}
+
+.solutions__link:hover {
+  color: var(--color-primary);
+}
+
+/* =========================
+   VISUAL
+========================= */
+
+.solutions__visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 360px;
+}
+
+/* =========================
+   WINDOW
+========================= */
+
+.solutions-window {
+  width: 100%;
+  max-width: 520px;
+
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+
+  background: var(--color-bg);
+
+  box-shadow: var(--shadow-lg);
+
+  overflow: hidden;
+
+  transform: perspective(1000px) rotateY(-4deg);
+
+  transition: var(--transition-normal);
+}
+
+.solutions-window:hover {
+  transform: perspective(1000px) rotateY(0deg) translateY(-5px);
+}
+
+/* =========================
+   WINDOW HEADER
+========================= */
+
+.solutions-window__header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding: 14px 18px;
+
+  border-bottom: 1px solid var(--color-border);
+
+  color: var(--color-text-secondary);
+
+  font-size: 0.75rem;
+}
+
+.window-dots {
+  display: flex;
+  gap: 5px;
+}
+
+.window-dots span {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: var(--color-border);
+}
+
+/* =========================
+   WINDOW BODY
+========================= */
+
+.solutions-window__body {
+  display: flex;
+
+  min-height: 300px;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.workspace-sidebar {
+  width: 80px;
+
+  padding: 22px 14px;
+
+  border-right: 1px solid var(--color-border);
+}
+
+.sidebar-line {
+  height: 8px;
+
+  margin-bottom: 18px;
+
+  border-radius: 4px;
+
+  background: var(--color-border);
+}
+
+.sidebar-line.active {
+  width: 90%;
+  background: var(--color-primary);
+}
+
+/* =========================
+   WORKSPACE CONTENT
+========================= */
+
+.workspace-content {
+  flex: 1;
+
+  padding: 25px;
+}
+
+.workspace-title {
+  margin-bottom: 28px;
+}
+
+.title-line {
+  width: 55%;
+  height: 13px;
+
+  margin-bottom: 9px;
+
+  border-radius: 6px;
+
+  background: var(--color-border);
+}
+
+.title-small {
+  width: 30%;
+  height: 7px;
+
+  border-radius: 4px;
+
+  background: var(--color-border);
+}
+
+/* =========================
+   WORKSPACE CARDS
+========================= */
+
+.workspace-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 10px;
+
+  margin-bottom: 30px;
+}
+
+.workspace-card {
+  padding: 15px;
+
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+.workspace-card span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 0.65rem;
+}
+
+.workspace-card strong {
+  color: var(--color-text);
+
+  font-size: 1.2rem;
+}
+
+/* =========================
+   PROGRESS
+========================= */
+
+.workspace-progress {
+  padding: 18px;
+
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 12px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 0.7rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 7px;
+
+  border-radius: 10px;
+
+  background: var(--color-border);
+
+  overflow: hidden;
+}
+
+.progress-bar span {
+  display: block;
+
+  width: 82%;
+  height: 100%;
+
+  background: var(--color-primary);
+}
+
+/* =========================
+   OTHER USE CASES
+========================= */
+
+.solutions__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+
+  margin-top: 20px;
+}
+
+.solution-card {
+  padding: 30px;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+
+  background: var(--color-bg-secondary);
+
+  transition: var(--transition-normal);
+}
+
+.solution-card:hover {
+  transform: translateY(-6px);
+
+  border-color: var(--color-primary);
+
+  box-shadow: var(--shadow-md);
+}
+
+.solution-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 45px;
+  height: 45px;
+
+  margin-bottom: 22px;
+
+  border-radius: 10px;
+
+  background: var(--color-bg);
+
+  font-size: 1.3rem;
+}
+
+.solution-card h3 {
+  margin-bottom: 10px;
+
+  color: var(--color-text);
+
+  font-size: 1.1rem;
+}
+
+.solution-card p {
+  margin-bottom: 20px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.solution-card a {
+  color: var(--color-text);
+
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  text-decoration: none;
+
+  transition: var(--transition-fast);
+}
+
+.solution-card a:hover {
+  color: var(--color-primary);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+  .solutions__featured {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+
+    padding: 45px;
+  }
+
+  .solutions__visual {
+    min-height: auto;
+  }
+
+  .solutions-window {
+    max-width: 650px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .solutions {
+    padding: 80px 0;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  .solutions__featured {
+    padding: 30px 25px;
+  }
+
+  .solutions__list {
+    grid-template-columns: 1fr;
+  }
+
+  .solutions__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .solutions-window {
+    transform: none;
+  }
+
+  .solutions-window:hover {
+    transform: translateY(-4px);
+  }
+}
+
+@media (max-width: 500px) {
+  .solutions__featured {
+    padding: 25px 18px;
+  }
+
+  .workspace-sidebar {
+    display: none;
+  }
+
+  .workspace-content {
+    padding: 18px;
+  }
+
+  .workspace-cards {
+    gap: 6px;
+  }
+
+  .workspace-card {
+    padding: 10px;
+  }
+
+  .workspace-card strong {
+    font-size: 1rem;
+  }
+
+  .solution-card {
+    padding: 25px;
+  }
+}
